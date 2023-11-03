@@ -8,9 +8,9 @@ AFRAME.registerComponent("game", {
     
     var timerEl = document.querySelector("#timer");
     if(this.data.gameState === "play"){
-      var duration = 500;
+      var duration = 180;
       this.startTimer(duration, timerEl);
-    }
+    } 
   },
   update: function () {
     this.isCollided(this.data.elementId);
@@ -43,6 +43,11 @@ AFRAME.registerComponent("game", {
       timerEl.setAttribute("text",{
         value:0
       })
+
+      var scene = document.querySelector("#scene");
+      var r = document.getElementById("terrain");
+      scene.removeChild(r);
+
     }
 
   },

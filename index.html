@@ -28,12 +28,13 @@
 
     <a-entity id="terrain" gltf-model="#terrainMap" position="0 0 0" scale="0.3 0.3 0.3"
       animation="property:position; easing:linear; loop:true; dur:50000; to:0 0 1000" 
-      static-body terrain-movement rings></a-entity>
+      static-body terrain-movement rings birds></a-entity>
 
       <!-- game objects -->
       <!-- rings -->
    
       <a-entity game="play"></a-entity>
+
       <!-- camera -->
       <a-entity id="camera" camera position="0 1.6 0" rotation="0 0 0" look-controls="pointerLockEnabled: false" >
         <a-entity id="plane" gltf-model="#airplane" position="0 -2 -5" scale="1 1 1" rotation="0 90 0" dynamic-body="mass:0" plane-rotation ></a-entity>

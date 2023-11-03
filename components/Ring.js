@@ -5,9 +5,9 @@ AFRAME.registerComponent("rings", {
       for (var i = 0; i <= 150; i++) {
         var id = `rings${i}`;
   
-        var posx = Math.random() * 4000 + -1000;
-        var posy = Math.random() * 10 + -1;
-        var posz = Math.random() * 4000 + -2000;
+        var posx = Math.random() * 3000 + -1000;
+        var posy = Math.random() * 2 + -1;
+        var posz = Math.random() * 3000 + -1000;
   
         var position = { x: posx, y: posy, z: posz };
         this.createRings(id, position);
@@ -39,7 +39,7 @@ AFRAME.registerComponent("rings", {
       property: "position",
       easing: "linear",
       loop: "true",
-      dur: "35000",
+      dur: "25000",
       to: "0 0 0",
     });
     ring.setAttribute("game", {
